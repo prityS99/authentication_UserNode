@@ -1,0 +1,25 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  /* Animations */
+  --animate-fade-in: fadeIn 0.6s ease-in;
+  --animate-scale-in: scaleIn 0.4s ease-in-out;
+  --animate-shine: shine 1.5s ease-in-out infinite;
+
+  /* Keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+  }
+
+  @keyframes shine {
+    from { left: -100%; }
+    to { left: 125%; }
+  }
+}
